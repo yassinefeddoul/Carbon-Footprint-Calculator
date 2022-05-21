@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/normalize.css" />
+    <link rel="stylesheet" href="Animate.css" />
+    <link rel="stylesheet" href="/footPrintStyles.css" />
+    <title>Foot Print Calculator</title>
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="notif notif--landing">
+        <div class="notif--icon" id="notif--icon"></div>
+        <div class="notif--content" id="notifContLanding"></div>
+      </div>
+      <div class="returnBtn" id="returnBtn">
+        <img src="/returnBtn.png" style="width: 5rem" />
+      </div>
+      <div class="bg-img"></div>
+      <!-- <div class="app-title">FOOTPRINT CALCULATOR</div> -->
+      <div class="blacked blacked--landing">
+        <div class="newProduct">
+          <div class="btn btn--middle" id="btnNewProd">+ New Product</div>
+          <div class="newProduct-entry" id="newProduct-entry">
+            <input
+              type="text"
+              placeholder="Product X"
+              class="ipnut-newProduct"
+              autofocus
+            />
+            <div class="btn btnNewProdOK" id="btnNewProdOK">OK</div>
+          </div>
+        </div>
+        <div class="btn btn--middle" id="btnExistingProd">Existing Product</div>
+      </div>
+      <div class="blacked blacked--newProduct">
+        <!-- <div class="app-title">FOOTPRINT CALCULATOR</div> -->
+        <div class="prodDef prodDef--prodProp">
+          <div class="container-caption container-caption--product">
+            FOOT PRINT REBBEK
+          </div>
+
+          <div class="dropdown">
+            <label class="cat1">Sector</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected1"></div>
+              <div class="dropBtn arrow-img" id="dropBtn1"></div>
+            </div>
+            <div class="dropelm" id="dropelm1">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <label class="cat2">Domain</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected2"></div>
+              <div class="dropBtn arrow-img" id="dropBtn2"></div>
+            </div>
+            <div class="dropelm" id="dropelm2">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <label class="cat3">Activitie</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected3"></div>
+              <div class="dropBtn arrow-img" id="dropBtn3"></div>
+            </div>
+            <div class="dropelm" id="dropelm3">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <label class="cat4">Type</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected4"></div>
+              <div class="dropBtn arrow-img" id="dropBtn4"></div>
+            </div>
+            <div class="dropelm" id="dropelm4">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <label class="cat5">Subtype</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected5"></div>
+              <div class="dropBtn arrow-img" id="dropBtn5"></div>
+            </div>
+            <div class="dropelm" id="dropelm5">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm5</div>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <label class="cat6">Attribute Name</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected6"></div>
+              <div class="dropBtn arrow-img" id="dropBtn6"></div>
+            </div>
+            <div class="dropelm" id="dropelm6">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+          <div class="dropdown">
+            <label class="cat7">Quantity | Coef = </label>
+            <div class="btn-drop-container">
+              <div class="drophead">
+                <!-- <div class="dropSelected" id="dropSelected7"></div> -->
+                <input type="number" id="input-unit" />
+                <div class="dropBtn unit" id="dropBtn7">Unity</div>
+              </div>
+              <div class="btn btn--middle btnConfirm" id="btnConfirm">
+                Confirm
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="prodDef prodDef--prodSummary">
+          <div class="container-caption container-caption--product">
+            PRODUCT CARACTERISTICS
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Sector</td>
+                <td>Domain</td>
+                <td>Activitie</td>
+                <td>Type</td>
+                <td>Subtype</td>
+                <td>Attribute Name</td>
+                <td>Carbon Footprint</td>
+              </tr>
+            </thead>
+            <tbody class="prod-caracteristics-tab" id="tab1">
+              <tr>
+                <td>skksk</td>
+                <td>skksk</td>
+                <td>skksk</td>
+                <td>skksk</td>
+                <td>skksk</td>
+                <td>skksk</td>
+                <td>skksk</td>
+              </tr>
+              <tr>
+                <td>ddddd</td>
+                <td>ddddd</td>
+                <td>ddddd</td>
+                <td>ddddd</td>
+                <td>ddddd</td>
+                <td>ddddd</td>
+                <td>ddddd</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="result-confirmation">
+            <div
+              class="container-caption container-caption--bottom"
+              id="CFPsum"
+            >
+              Carbon Footprint =
+            </div>
+            <div class="btn btnResult btnInitilize" id="btnInitilize">
+              Initilize
+            </div>
+            <div class="btn btnResult btnDone" id="btnDone">DONE</div>
+          </div>
+        </div>
+      </div>
+      <div class="blacked blacked--existingProduct">
+        <div class="prodDef prodDef--chooseProd">
+          <div class="dropdown">
+            <label class="cat8">Choose Your Product</label>
+            <div class="drophead">
+              <div class="dropSelected" id="dropSelected8"></div>
+              <div class="dropBtn arrow-img" id="dropBtn8"></div>
+            </div>
+            <div class="dropelm" id="dropelm8">
+              <div class="elm elm1">elm1</div>
+              <div class="elm elm1">elm2</div>
+              <div class="elm elm1">elm3</div>
+              <div class="elm elm1">elm4</div>
+            </div>
+          </div>
+        </div>
+        <div class="prodDef prodDef--prodCarac">
+          <div class="container-caption container-caption--product">
+            PRODUCT CARACTERISTICS
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <td>Sector</td>
+                <td>Domain</td>
+                <td>Activitie</td>
+                <td>Type</td>
+                <td>Subtype</td>
+                <td>Attribute Name</td>
+                <td>Carbon Footprint</td>
+              </tr>
+            </thead>
+            <tbody class="prod-caracteristics-tab" id="tab2">
+              <tr>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+                <td>ssasasa</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="result-confirmation">
+            <div class="container-caption container-caption--bottom" id="cfp2">
+              Carbon Footprint =
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="/footPrint.js"></script>
+</html>
